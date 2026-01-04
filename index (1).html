@@ -1,0 +1,159 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Survey for a Better Society</title>  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f2f5f7;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1f4037, #99f2c8);
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 18px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    nav {
+      background: #1f4037;
+      padding: 12px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      padding: 25px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .card {
+      background: #fff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+    }
+
+    .card h2 {
+      margin-top: 0;
+      color: #1f4037;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    form label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 6px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px 25px;
+      background: #1f4037;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #163027;
+    }
+
+    footer {
+      background: #1f4037;
+      color: #fff;
+      text-align: center;
+      padding: 18px;
+    }
+  </style></head><body><header>
+  <h1>Survey for a Better Society</h1>
+  <p>We believe real change starts by listening. Share your thoughts on what changes are needed to make our society a better, safer, and happier place to live.</p>
+</header><nav>
+  <a href="#about">About</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#survey">Survey</a>
+</nav><div class="container">  <div class="card" id="about">
+    <h2>About This Survey</h2>
+    <p>This survey aims to understand people's perspectives on social issues such as education, cleanliness, equality, safety, mental health, and community responsibility. Your opinion matters and can inspire positive change.</p>
+  </div>  <div class="card" id="gallery">
+    <h2>Vision of a Better Society</h2>
+    <p>These images represent unity, responsibility, and hope for a better future.</p><div class="gallery">
+  <img src="https://images.unsplash.com/photo-1509099836639-18ba1795216d" alt="Community helping hands">
+  <img src="https://images.unsplash.com/photo-1520975916090-3105956dac38" alt="Clean city environment">
+  <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="Education and learning">
+  <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e" alt="Unity and equality">
+</div>
+
+  </div>  <div class="card" id="survey">
+    <h2>Your Voice Matters</h2>
+    <form onsubmit="submitSurvey(event)">
+      <label>Your Name (optional)</label>
+      <input type="text" placeholder="Enter your name" /><label>What changes are most needed in our society?</label>
+  <textarea rows="4" placeholder="Share your thoughts..."></textarea>
+
+  <label>What is one action individuals should take to improve society?</label>
+  <textarea rows="3" placeholder="Your answer"></textarea>
+
+  <button type="submit">Submit Survey</button>
+</form>
+
+  </div></div><footer>
+  <p>© 2026 Survey for a Better Society | Together We Can Improve</p>
+</footer><script>
+  function submitSurvey(event) {
+    event.preventDefault();
+    alert("Thank you for sharing your thoughts! Your response matters.");
+  }
+</script></body>
+</html>
